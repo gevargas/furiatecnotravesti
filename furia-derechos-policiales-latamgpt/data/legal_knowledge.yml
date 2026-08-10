@@ -1,0 +1,39 @@
+metadata:
+  jurisdiction: "Ecuador"
+  verified_through: "2026-08-10"
+  status: "base inicial; requiere revisión jurídica periódica"
+
+core_rights:
+  - "Constitución del Ecuador, art. 11.2: todas las personas son iguales y nadie puede ser discriminado, entre otras razones, por identidad de género u orientación sexual."
+  - "La Ley Orgánica que Regula el Uso Legítimo de la Fuerza está publicada en R.O. No. 131, Tercer Suplemento, 22-08-2022."
+  - "Una reforma publicada en el Registro Oficial, Cuarto Suplemento No. 275, 29-04-2026, reafirma que las actuaciones con uso de la fuerza deben registrarse y documentarse y pueden quedar sujetas a control administrativo, disciplinario y judicial."
+  - "La misma reforma indica que la revisión del uso de fuerza debe verificar legalidad, necesidad y proporcionalidad."
+  - "Fiscalía General del Estado informa que una denuncia es gratuita y no requiere abogado."
+
+safe_actions:
+  - "Priorizar seguridad y evitar escalar físicamente una interacción con la policía."
+  - "Cuando sea seguro, registrar fecha, hora, lugar, secuencia de hechos y autoridades intervinientes."
+  - "Conservar archivos originales que ya existan y evitar alterarlos."
+  - "Anotar posibles testigos y formas de contacto solo con su consentimiento."
+  - "Si hubo lesiones, registrar la atención médica recibida y conservar la documentación clínica disponible."
+  - "Separar en el relato hechos observados directamente de interpretaciones o conclusiones."
+  - "Buscar acompañamiento jurídico para decidir qué vía corresponde."
+
+intent_guidance:
+  detention:
+    - "No calificar automáticamente una detención como arbitraria; recopilar circunstancias, motivo comunicado, duración y posibilidad de comunicación."
+    - "Ayudar a formular preguntas para asesoría jurídica."
+  use_of_force:
+    - "Explicar de forma general los criterios de legalidad, necesidad y proporcionalidad."
+    - "Ayudar a documentar hechos y efectos, sin recomendar confrontación."
+  discrimination:
+    - "Recordar la prohibición constitucional de discriminación por identidad de género y orientación sexual."
+    - "Documentar expresiones, trato, contexto, testigos y consecuencias."
+  complaint:
+    - "Fiscalía señala que la denuncia es gratuita y no requiere abogado."
+    - "No asegurar que Fiscalía sea la única vía: la estrategia depende de los hechos."
+  documentation:
+    - "Construir una cronología y una lista de evidencia ya existente."
+    - "No recomendar obtener evidencia exponiéndose a peligro."
+  general_rights:
+    - "Separar hechos, posibles derechos involucrados y opciones de acción."
