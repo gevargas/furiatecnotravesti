@@ -1,0 +1,28 @@
+{
+  "name": "furia-atlas-conceptos-local",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "graphology": "latest",
+    "graphology-communities-louvain": "latest",
+    "graphology-layout-forceatlas2": "latest",
+    "graphology-metrics": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "rdflib": "latest",
+    "sigma": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}
