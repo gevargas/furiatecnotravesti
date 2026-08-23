@@ -10,17 +10,16 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
     "graphology": "latest",
     "graphology-communities-louvain": "latest",
     "graphology-layout-forceatlas2": "latest",
     "graphology-metrics": "latest",
-    "pdfjs-dist": "^4.10.38",
-    "rdflib": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "sigma": "latest",
-    "typescript": "latest",
-    "vite": "latest"
+    "rdflib": "latest",
+    "sigma": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",

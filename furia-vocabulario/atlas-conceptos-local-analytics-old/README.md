@@ -140,29 +140,6 @@ La aplicación admite cualquiera de estas dos modalidades:
 - `property_graph_nodes.csv`;
 - `property_graph_edges.csv`.
 
-Además, para implementar la estrategia metodológica completa, admite:
-
-- la **Guía unificada de preguntas** en PDF o TXT; la aplicación reconoce automáticamente sus secciones numeradas y separa las preguntas del corazón de las preguntas técnicas;
-- `sentences.csv` para recuperar los fragmentos de las transcripciones;
-- `occurrences.csv` para vincular cada concepto con las frases en las que aparece.
-
-Los cuatro CSV pueden seleccionarse en sus controles correspondientes. Los archivos se leen en memoria dentro del navegador y no se envían a un servidor.
-
-## Análisis relacionado con la guía
-
-La pestaña **Guía** compara cada eje temático con el vocabulario del grafo. Para cada sección muestra:
-
-- número de conceptos coincidentes;
-- coincidencias con preguntas del corazón;
-- coincidencias con preguntas técnicas;
-- un subgrafo formado por esos conceptos y sus relaciones más fuertes.
-
-La pestaña **Resultados** añade gráficas de afinidad por eje y una comparación agregada entre vocabulario presente en preguntas del corazón y preguntas técnicas.
-
-Esta comparación es léxica. Si las transcripciones todavía no incluyen un identificador de pregunta o sección, no debe interpretarse como prueba de que una intervención responde a una pregunta concreta. Para hacer esa atribución se recomienda añadir `question_id`, `guide_section` y `question_type` a las intervenciones o frases.
-
-Cuando se cargan `sentences.csv` y `occurrences.csv`, al seleccionar un concepto aparecen hasta ocho fragmentos de evidencia con su archivo y `sentence_id`. Esto permite volver desde una medida o subgrafo a las narrativas originales.
-
 El lector RDF reconoce el modelo generado por el notebook: recursos `Concept`, entidades `Cooccurrence`, `sourceConcept`, `targetConcept` y `cooccurrenceWeight`. Si el RDF solo contiene `coOccursWith`, la relación se importa con peso `1`.
 
 ### Columnas de nodos
