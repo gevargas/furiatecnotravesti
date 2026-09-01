@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MODEL="${OLLAMA_MODEL:-qwen3:1.7b}"
+MODEL="${OLLAMA_MODEL:-qwen2.5:0.5b-instruct-q4_K_M}"
 
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
