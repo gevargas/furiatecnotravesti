@@ -1,3 +1,13 @@
+<!--
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Agradecimiento
+// Agracedimiento al: El comité de datos del proyecto, agradece profundamente la participación
+// de las integrantes de la Fundación Furia Trans por la validación de la ontología así como el 
+// financiamiento de la red IA feminista
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://furiatecnologiatravesti.org/ontologiaFuriaTrans//"
      xml:base="https://furiatecnologiatravesti.org/ontologiaFuriaTrans//"
