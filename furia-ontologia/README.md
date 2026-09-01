@@ -2,6 +2,7 @@
 
 **URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans/`  
 **Formatos:** OWL (RDF/XML)
+
 **Licencia:** comunidad FurIA
 
 ## Propósito y Alcance
