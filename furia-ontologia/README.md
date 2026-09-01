@@ -1,6 +1,7 @@
-# ontologia-furia
+# ontologia-furia 
+@prefix : <https://furiatecnologiatravesti.org/ontologiaFuriaTrans//> .
 
-**URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans/`  
+**URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans//`  
 **Formatos:** OWL (RDF/XML)
 
 **Licencia:** comunidad FurIA
@@ -17,5 +18,5 @@ Aquí se muestra la jerarquía de las clases que se obtuvieron una vez realizado
 ![Jerarquía de clases](imagenes/jerarquia_clases.png)
 
 ## Clases Principales
-* `onto4FurIA:Persona`: Representa a los individuos que conforman las diferentes relaciones con las clases.
-* `ontoFurIA:Familia`: con la subclase: Comunidad Furia trans, que representan a las personas que tienen una relación de vínculo con la comunidad por conveniencia, afinidad o adopción.
+* `:Persona`: Representa a los individuos que conforman las diferentes relaciones con las clases.
+* `:Familia`: con la subclase: Comunidad Furia trans, que representan a las personas que tienen una relación de vínculo con la comunidad por conveniencia, afinidad o adopción.
