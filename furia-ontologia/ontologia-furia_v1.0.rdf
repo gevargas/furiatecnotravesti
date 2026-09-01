@@ -1,0 +1,3261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://furiatecnologiatravesti.org/ontologiaFuriaTrans//"
+     xml:base="https://furiatecnologiatravesti.org/ontologiaFuriaTrans//"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/">
+        <owl:versionIRI rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/buscan_asesoria -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/buscan_asesoria">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>buscan asesoria</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/hacen -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/hacen">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#afrontan -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#afrontan">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+                    <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>afrontan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dirigidas_a -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dirigidas_a">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>dirigidas a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#escuchan -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#escuchan">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>escuchan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#forman_parte_de -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#forman_parte_de">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Familias"/>
+        <rdfs:label>forman parte de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#frecuentan -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#frecuentan">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>frecuentan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#impulsan_a -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#impulsan_a">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>impulsan a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#participan_en -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#participan_en">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+        <rdfs:label>participan en</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#realizan -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#realizan">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>realizan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#recibeConsejo -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#recibeConsejo">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Madre"/>
+        <rdfs:label>reciben consejo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#se_caracterizan_por -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#se_caracterizan_por">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>se caracterizan por</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sienten -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sienten">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>sienten</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#son_practicados_por -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#son_practicados_por">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>son practicados por</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tienen -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tienen">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+                    <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>tienen</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#usan -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#usan">
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>usan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#usan_bolsa_y_celular -->
+
+    <owl:ObjectProperty rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#usan_bolsa_y_celular">
+        <rdfs:subPropertyOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#usan"/>
+        <rdfs:domain rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:range rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>usan bolsa y celular</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/Tia -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/Tia">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Comunidad_FuriaTrans"/>
+        <rdfs:label>Tía</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades">
+        <rdfs:isDefinedBy>Es la acción o actividad que realizan las personas de la comunidad de trans.</rdfs:isDefinedBy>
+        <rdfs:label>Actividades</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes">
+        <rdfs:comment>Es una capacidad o competencia que tiene una persona  para realizar una actividad específica o un trabajo determinado.</rdfs:comment>
+        <rdfs:comment>Este concepto se usará como las características que identifican  a una persona de la comunidad trans.</rdfs:comment>
+        <rdfs:label>Aptitudes</rdfs:label>
+        <rdfs:seeAlso>Expectativas</rdfs:seeAlso>
+        <rdfs:seeAlso>Valores</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Comunidad_FuriaTrans -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Comunidad_FuriaTrans">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Familias"/>
+        <rdfs:label>Comunidad Furia Trans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Familias"/>
+        <rdfs:label>Familia consanguínea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+        <rdfs:label>Retos económicos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Educativos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Educativos">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+        <rdfs:label>Retos educativos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos">
+        <rdfs:isDefinedBy>Son las actividades a las que se dedican las personas de la comunidad que les generan alguna remuneración económica.</rdfs:isDefinedBy>
+        <rdfs:label>Empleos</rdfs:label>
+        <rdfs:seeAlso>Lugares</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas">
+        <rdfs:isDefinedBy>Puede ser una creencia, esperanza o ilusión sobre el futuro o de que algo que deseen suceda.</rdfs:isDefinedBy>
+        <rdfs:label>Expectativas</rdfs:label>
+        <rdfs:seeAlso>Motivaciones</rdfs:seeAlso>
+        <rdfs:seeAlso>Sentimientos</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Familias -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Familias">
+        <rdfs:comment>Para la comunidad trans hay una clasificación, que es la consanguínea y por el vínculo con la comunidad.</rdfs:comment>
+        <rdfs:isDefinedBy>Es el conjunto de personas  ascendientes, descendientes y colaterales, ya sea algún parentesco (de sangre),  por conveniencia, afinidad o adopción</rdfs:isDefinedBy>
+        <rdfs:label>Familias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Hermana_de_comunidad_Furia -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Hermana_de_comunidad_Furia">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Comunidad_FuriaTrans"/>
+        <rdfs:isDefinedBy>Una hermana en la comunidad Furia es alguien que te apoya ...</rdfs:isDefinedBy>
+        <rdfs:label>Hermana de comunidad furia</rdfs:label>
+        <rdfs:seeAlso>Madre</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Hija -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Hija">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Comunidad_FuriaTrans"/>
+        <rdfs:label>Hija</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:isDefinedBy>Es la atención, la curiosidad y el deseo de saber o participar más sobre una persona, objeto, tema o actividad.</rdfs:isDefinedBy>
+        <rdfs:label>Intereses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+        <rdfs:label>Retos legales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares">
+        <rdfs:comment>Para el contexto de trans, los lugares son los espacios que frecuentan para esparcimiento, trabajo o educación.</rdfs:comment>
+        <rdfs:isDefinedBy>Porción de espacio o ubicación concreta que ocupa algo o alguien.</rdfs:isDefinedBy>
+        <rdfs:label>Lugares</rdfs:label>
+        <rdfs:seeAlso>Empleos</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Madre -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Madre">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Comunidad_FuriaTrans"/>
+        <rdfs:label>Madre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones">
+        <rdfs:isDefinedBy>Es un estado de ánimo que hace que una persona se active para conseguir las metas concretas que se haya propuesto.</rdfs:isDefinedBy>
+        <rdfs:label>Motivaciones</rdfs:label>
+        <rdfs:seeAlso>Expectativas</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+        <rdfs:label>Retos médicos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Frases que son reciben las personas de la comunidad trans.</rdfs:comment>
+        <rdfs:isDefinedBy>Es una acción, palabra o acto que hiere, daña o humilla la dignidad, el honor, la sensibilidad o el respeto hacia una persona.</rdfs:isDefinedBy>
+        <rdfs:label>Ofensas hacia las cuerpas trans</rdfs:label>
+        <rdfs:seeAlso>Piropos</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones">
+        <rdfs:comment>Organizaciones como colectivos y asociaciones en defensa de la comunidad trans.</rdfs:comment>
+        <rdfs:isDefinedBy>Asociación de personas regulada por un conjunto de normas en función de determinados fines.</rdfs:isDefinedBy>
+        <rdfs:label>Organizaciones</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas">
+        <rdfs:comment>Ente capaz de tener facultades y deberes.</rdfs:comment>
+        <rdfs:label>Personas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos">
+        <rdfs:comment>frases que escucha la comunidad trans de otras personas de la comunidad o externos.</rdfs:comment>
+        <rdfs:isDefinedBy>Frase breve y halagadora con la que se elogia o pondera alguna cualidad de una persona, especialmente su belleza.</rdfs:isDefinedBy>
+        <rdfs:label>Piropos</rdfs:label>
+        <rdfs:seeAlso>Ofensas</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas">
+        <rdfs:isDefinedBy>obstáculo, dificultad o una cuestión que surge y exige una solución o una aclaración, así como también tiene consecuencias económicas o de salud.</rdfs:isDefinedBy>
+        <rdfs:label>Problemas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos">
+        <rdfs:isDefinedBy>Objetivo o empeño difícil de llevar a cabo, y que constituye por ello un estímulo y un desafío para quien lo afronta.</rdfs:isDefinedBy>
+        <rdfs:label>Retos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos">
+        <rdfs:isDefinedBy>Estado de ánimo como también a una emoción conceptualizada que determina el estado de ánimo de una persona.</rdfs:isDefinedBy>
+        <rdfs:label>Sentimientos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sociales -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sociales">
+        <rdfs:subClassOf rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+        <rdfs:label>Retos sociales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías">
+        <rdfs:comment>Tecnologías que son utilizadas entre la comunidad trans.</rdfs:comment>
+        <rdfs:isDefinedBy>Es la suma de técnicas, habilidades, métodos y procesos utilizados en la producción de bienes o servicios o en el logro de objetivos.</rdfs:isDefinedBy>
+        <rdfs:label>Tecnologías</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores -->
+
+    <owl:Class rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores">
+        <rdfs:isDefinedBy>Son creencias individuales que motivan a las personas a comportarse de una manera u otra.</rdfs:isDefinedBy>
+        <rdfs:label>Valores</rdfs:label>
+        <rdfs:seeAlso>Aptitudes</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/Instagram -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/Instagram">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>Instagram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/WhatsApp -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/WhatsApp">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>WhatsApp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/clasismo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/clasismo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>clasismo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/mensajear_en_WhatsApp -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/mensajear_en_WhatsApp">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>mensajear en WhatsApp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Asociación_de_trabajadoras_sexuales_trans_de_Quito -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Asociación_de_trabajadoras_sexuales_trans_de_Quito">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+        <rdfs:label>Asociación de trabajadoras sexuales trans de Quito</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Diálogo_diverso -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Diálogo_diverso">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+        <rdfs:label>Diálogo diverso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Facebook -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Facebook">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>Facebook</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Furia_trans -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Furia_trans">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+        <rdfs:label>Furia Trans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#LGBT -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#LGBT">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+        <rdfs:label>LGBT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tiktok -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tiktok">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>Tiktok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#abogado -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#abogado">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#abuelita -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#abuelita">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#abuelito -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#abuelito">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#aclarar_con_verdad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#aclarar_con_verdad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#acompañamiento_auto_cuidado_salud_mental -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#acompañamiento_auto_cuidado_salud_mental">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#acoso_sexual -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#acoso_sexual">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#activismo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#activismo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>activismo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#adicciones -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#adicciones">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>adicciones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#alcanzar_metas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#alcanzar_metas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>alcanzar_metas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#alcohólica -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#alcohólica">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>alcohólica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#alejarse_de_todo_lo_malo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#alejarse_de_todo_lo_malo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>alejarse de todo lo malo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amenazas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amenazas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>amenazas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amiga -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amiga">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>amiga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amigo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amigo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>amigo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amor -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#amor">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>amor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#angustia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#angustia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>angustia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#antros -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#antros">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>antros</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#apoyar_a_la_familia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#apoyar_a_la_familia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>apoyar a la familia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arregla_uñas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arregla_uñas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>arregla uñas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arte -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arte">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>arte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arte_trans -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arte_trans">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>arte trans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arte_travesti -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#arte_travesti">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>arte travesti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#asesinatos -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#asesinatos">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>asesinatos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#asesoría -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#asesoría">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>asesoría</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#atención_médica -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#atención_médica">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>atención médica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#auto_propio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#auto_propio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>auto propio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ayuda_de_Dios_para_resolver_problemas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ayuda_de_Dios_para_resolver_problemas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>ayuda de Dios para resolver problemas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ayuda_psicológica -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ayuda_psicológica">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>ayuda psicológica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bachiller -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bachiller">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Educativos"/>
+        <rdfs:label>bachiller</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bailar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bailar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>bailar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#banco -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#banco">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos"/>
+        <rdfs:label>banco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bandera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bandera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>bandera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#belleza -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#belleza">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>belleza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bochinches -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bochinches">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>bochinches</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#borracha -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#borracha">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>borracha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#botox -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#botox">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>botox</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#buenota -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#buenota">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>buenota</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bullying -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bullying">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>bullying</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#burlas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#burlas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>burlas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#caballero -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#caballero">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>caballero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#calle -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#calle">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>calle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#callejera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#callejera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>callejera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cariño -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cariño">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>cariño</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#casas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#casas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>casas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#celular -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#celular">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>celular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#chat -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#chat">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>chat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#chismes -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#chismes">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>chismes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cirugía_vaginoplastia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cirugía_vaginoplastia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>cirugía vaginoplastia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cirugías_estéticas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cirugías_estéticas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>cirugías estéticas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cisgénero -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cisgénero">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>cisgénero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#clienta -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#clienta">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>clienta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cliente -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cliente">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>cliente</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#clínica -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#clínica">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>clínica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#colectivo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#colectivo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+        <rdfs:label>colectivo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#coloridas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#coloridas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>coloridas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#colorimetría -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#colorimetría">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>colorimetría</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#compañera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#compañera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>compañera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#confianza -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#confianza">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>confianza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#consumir -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#consumir">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>consumir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#consumo_de_hormonas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#consumo_de_hormonas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>consumo de hormonas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#correo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#correo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>correo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#costurera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#costurera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>costurera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuerpa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuerpa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>cuerpa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuerpa_territorio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuerpa_territorio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>cuerpa territorio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuerpo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuerpo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>cuerpo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuidado -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cuidado">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>cuidado</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#culona -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#culona">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>culona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cultura -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#cultura">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>cultura</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#delicuencia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#delicuencia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>delincuencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#delincuente -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#delincuente">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>delincuente</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#derechos -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#derechos">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>derechos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#descuartización -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#descuartización">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>descuartización</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#despenalización -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#despenalización">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>despenalización</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dibujar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dibujar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>dibujar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dificultades -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dificultades">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>dificultades</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dinero -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dinero">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos"/>
+        <rdfs:label>dinero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#discoteca -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#discoteca">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>discoteca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#discriminación -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#discriminación">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>discriminación</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dolor -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dolor">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>dolor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#droga -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#droga">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>droga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#drogadicta -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#drogadicta">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>drogadicta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#drogadicto -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#drogadicto">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>drogadicto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dólar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#dólar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos"/>
+        <rdfs:label>dólar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#educación -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#educación">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sociales"/>
+        <rdfs:label>educación</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#educada -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#educada">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>educada</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ejercicio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ejercicio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>ejercicio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#empoderamiento -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#empoderamiento">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>empoderamiento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#emprendimiento -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#emprendimiento">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>emprendimiento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#enfermedad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#enfermedad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>enfermedad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#envidia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#envidia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>envidia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#equidad_social -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#equidad_social">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>equidad_social</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estabilidad_personal -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estabilidad_personal">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>estabilidad_personal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estilista -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estilista">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>estilista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estudiar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estudiar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>estudiar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#evitan_lugares_donde_pueden_ser_agredidas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#evitan_lugares_donde_pueden_ser_agredidas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>evitan lugares donde pueden ser agredidas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#exigen_derechos_equitativos -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#exigen_derechos_equitativos">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>exigen derechos equitativos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#extorsionadora -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#extorsionadora">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>extorsionadora</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#extorsiones -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#extorsiones">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>extorsiones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#facilitar_inclusión_social -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#facilitar_inclusión_social">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>facilitar inclusión social</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#falsa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#falsa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>falsa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#falta_de_empatía -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#falta_de_empatía">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>falta de empatía</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#falta_de_oportunidades -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#falta_de_oportunidades">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>falta de oportunidades</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fea -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fea">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>fea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#feminicidio_trans -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#feminicidio_trans">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>feminicidio trans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#follar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#follar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>follar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#frustración -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#frustración">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>frustración</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fuentes_de_empleo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fuentes_de_empleo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos"/>
+        <rdfs:label>fuentes de empleo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fuerza -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fuerza">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>fuerza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fumar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#fumar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>fumar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#gente_falsa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#gente_falsa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>gente falsa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#gente_metiche -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#gente_metiche">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>gente metiche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#grosera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#grosera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>grosera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#grosero -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#grosero">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>grosero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#guapa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#guapa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>guapa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hacerse_retoques -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hacerse_retoques">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>hacerse retoques</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hermana -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hermana">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>hermana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hermano -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hermano">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>hermano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hija -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hija">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>hija</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hombre -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hombre">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>hombre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#homofobia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#homofobia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>homofobia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#honradez -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#honradez">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>honradez</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hospital -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hospital">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>hospital</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hotel -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#hotel">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>hotel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ignorancia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ignorancia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>ignorancia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ilusión -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ilusión">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>ilusión</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#imagen -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#imagen">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>imagen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#imaginación -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#imaginación">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>imaginación</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#injusticia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#injusticia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>injusticia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#inseguridad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#inseguridad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>inseguridad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#inspiración -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#inspiración">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>inspiración</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#insulto -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#insulto">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>insulto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#inteligencia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#inteligencia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>inteligencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#internet -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#internet">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#judicial -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#judicial">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>judicial</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#justicia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#justicia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>justicia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#juventud -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#juventud">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>juventud</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ladrona -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ladrona">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>ladrona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ladrón -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ladrón">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>ladrón</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lealtad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lealtad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>lealtad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lectura -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lectura">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>lectura</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lesbiana -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lesbiana">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>lesbiana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#libro -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#libro">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>libro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#licorera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#licorera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>licorera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#limpiar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#limpiar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>limpiar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#loca -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#loca">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>loca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#luchas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#luchas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>luchas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#macho -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#macho">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>macho</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maltrato -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maltrato">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>maltrato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mamacita -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mamacita">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>mamacita</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mamá -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mamá">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>mamá</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marchas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marchas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>marchas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marica -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marica">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <owl:sameAs rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maricón"/>
+        <rdfs:label>marica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maricón -->
+
+    <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maricón"/>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mariconcito_puerco -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mariconcito_puerco">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>mariconcito puerco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maricón -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#maricón">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>maricón</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marido -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marido">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>marido</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mariposa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mariposa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>mariposa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mascotas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mascotas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>mascotas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mejor_futuro -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mejor_futuro">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>mejor futuro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#menoscabar_los_derechos_y_libertades -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#menoscabar_los_derechos_y_libertades">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>menoscabar los derechos y libertades</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#miedo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#miedo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>miedo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#migrante -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#migrante">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>migrante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ministerio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ministerio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>ministerio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mismo_trato_por_parte_del_estado -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mismo_trato_por_parte_del_estado">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>mismo trato por parte del estado</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#moda -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#moda">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>moda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#morbo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#morbo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>morbo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#muertes -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#muertes">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>muertes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mujer -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mujer">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>mujer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mujer_trans -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#mujer_trans">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>mujer trans</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#municipio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#municipio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>municipio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#médicas_maricas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#médicas_maricas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>médicas maricas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#médicos_maricas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#médicos_maricas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>médicos maricas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#odio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#odio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>odio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#oportunidades -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#oportunidades">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>oportunidades</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ordenanza -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ordenanza">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>ordenanza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#orgullo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#orgullo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>orgullo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#orientación_psicológica -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#orientación_psicológica">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>orientación psicológica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#padre -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#padre">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>padre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#papá -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#papá">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>papá</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#parque -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#parque">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>parque</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#participación -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#participación">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>participación</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#pasear -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#pasear">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>pasear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#pasión -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#pasión">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>pasión</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#patrocinio_legal -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#patrocinio_legal">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>patrocinio legal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#payasadas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#payasadas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>payasadas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#paz -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#paz">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>paz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#peleas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#peleas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>peleas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#peluquera -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#peluquera">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>peluquera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#peluquería -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#peluquería">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>peluquería</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#películas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#películas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>películas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#perra -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#perra">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>perra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#perris -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#perris">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>perris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#perseverancia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#perseverancia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>perseverancia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#persistencia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#persistencia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>persistencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#personalidad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#personalidad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>personalidad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#piel -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#piel">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>piel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#plaza -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#plaza">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>plaza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#política -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#política">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>política</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#presa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#presa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>presa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#protección -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#protección">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>protección</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#proyectos -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#proyectos">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sociales"/>
+        <rdfs:label>proyectos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#psicóloga -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#psicóloga">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>psicóloga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#puerca -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#puerca">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>puerca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#puta -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#puta">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>puta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#putofobia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#putofobia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>putofobia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#página_web -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#página_web">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>página web</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#racismo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#racismo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>racismo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#realizanConferencias -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#realizanConferencias">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>realizan conferencias</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#recurso -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#recurso">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>recurso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#red -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#red">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>red</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#redes_sociales -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#redes_sociales">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>redes sociales</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#regia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#regia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>regia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#reinas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#reinas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>reinas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resentimiento -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resentimiento">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>resentimiento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resilencia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resilencia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>resilencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resistencia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resistencia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>resistencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resolución -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resolución">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>resolución</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#respeto -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#respeto">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sociales"/>
+        <rdfs:label>respeto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#restaurante -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#restaurante">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>restaurante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resultado -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#resultado">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>resultado</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#reunión -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#reunión">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>reunión</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ricas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ricas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+        <rdfs:label>ricas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#risa -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#risa">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>risa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#rostro -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#rostro">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>rostro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#salir -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#salir">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>salir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#salud_pública -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#salud_pública">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>salud pública</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#seguridad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#seguridad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sociales"/>
+        <rdfs:label>seguridad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_fuerte -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_fuerte">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>ser fuerte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_importante -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_importante">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>ser importante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_mejor -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_mejor">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>ser mejor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_profesional -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_profesional">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>ser profesional</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_trabajadora_social -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ser_trabajadora_social">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>ser trabajadora social</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#seriedad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#seriedad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>seriedad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sexo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sexo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>sexo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sidosas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sidosas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>sidosas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#silicón -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#silicón">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>silicón</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sin_familia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sin_familia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>sin familia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sobreviviente -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sobreviviente">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>sobreviviente</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sobrina -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sobrina">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>sobrina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sobrino -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sobrino">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>sobrino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#soledad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#soledad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>soledad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#solidaridad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#solidaridad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        <rdfs:label>solidaridad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sucia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sucia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>sucia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sueño -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#sueño">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>sueño</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#súper_hipócrita -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#súper_hipócrita">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>súper hipócrita</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tatuaje -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tatuaje">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>tatuaje</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#telegram -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#telegram">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>telegram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#teléfono -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#teléfono">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+        <rdfs:label>teléfono</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_autonomía -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_autonomía">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>tener autonomía</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_buen_trabajo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_buen_trabajo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tener buen trabajo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_casa_propia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_casa_propia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>tener casa propia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_empresa_propia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_empresa_propia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tener empresa propia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_salud -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_salud">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tener salud</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_tetas_más_grandes -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_tetas_más_grandes">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tener tetas más grandes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_trabajo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_trabajo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>tener trabajo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_un_hogar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_un_hogar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tener un hogar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_vivienda -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_vivienda">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+        <rdfs:label>tener vivienda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_éxito -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tener_éxito">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tener éxito</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#terapia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#terapia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Médicos"/>
+        <rdfs:label>terapia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#territorio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#territorio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>territorio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajadora_sexual -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajadora_sexual">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>trabajadora sexual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>trabajar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajar_sin_miedo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajar_sin_miedo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>trabajar sin miedo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Económicos"/>
+        <rdfs:label>trabajo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trago -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trago">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>trago</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tranquilidad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tranquilidad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+        <rdfs:label>tranquilidad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transfobia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transfobia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>transfobia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transformer -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transformer">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>transformer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transtornadas -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transtornadas">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>transtornadas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transvestismo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#transvestismo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+        <rdfs:label>transvestismo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trato_justo -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trato_justo">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Legales"/>
+        <rdfs:label>trato justo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#travesti -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#travesti">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+        <rdfs:label>travesti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#travesticidio -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#travesticidio">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>travesticidio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#travestona -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#travestona">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>travestona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trepada -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trepada">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>trepada</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#técnicas_de_corte -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#técnicas_de_corte">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>técnicas de corte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tías -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tías">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>tías</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tíos -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#tíos">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Consanguinea"/>
+        <rdfs:label>tíos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#universidad -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#universidad">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+        <rdfs:label>universidad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vaga -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vaga">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>vaga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vendedora -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vendedora">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+        <rdfs:label>vendedora</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ver_television -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ver_television">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>ver televisión</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vergüenza -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vergüenza">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+        <rdfs:label>vergüenza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#viajar -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#viajar">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+        <rdfs:label>viajar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vicios -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vicios">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>vicios</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#violencia -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#violencia">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>violencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#viradora -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#viradora">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>viradora</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#voz -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#voz">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+        <rdfs:label>voz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vulneración -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#vulneración">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+        <rdfs:label>vulneración</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#zorra -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#zorra">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+        <rdfs:label>zorra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#zorro -->
+
+    <owl:NamedIndividual rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#zorro">
+        <rdf:type rdf:resource="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Actividades"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Aptitudes"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Empleos"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Expectativas"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Familias"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Intereses"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Lugares"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Motivaciones"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Ofensas_hacia_las_cuerpas_trans"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Organizaciones"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Personas"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Piropos"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Problemas"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Retos"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Sentimientos"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Tecnologías"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#Valores"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/mensajear_en_WhatsApp"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#activismo"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#bailar"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#consumir"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#estudiar"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#lectura"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#limpiar"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#marchas"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#participación"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#pasear"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#realizanConferencias"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#salir"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#trabajar"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#técnicas_de_corte"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#ver_television"/>
+            <rdf:Description rdf:about="https://furiatecnologiatravesti.org/ontologiaFuriaTrans/#viajar"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
