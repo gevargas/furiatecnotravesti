@@ -1,4 +1,4 @@
-# ontologia-furia 
+# ontologia-furia   
 @prefix : <https://furiatecnologiatravesti.org/ontologiaFuriaTrans//> .
 
 **URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans/`  
