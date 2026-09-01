@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explorador web de la Ontología furIA" />
+    <title>Explorador de la Ontología furIA</title>
+  </head>
+  <body>
+    <main id="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Fundación Furia Trans · ontología RDF/OWL</p>
+          <h1>Explorador de la Ontología furIA</h1>
+          <p>Clases, propiedades, individuos y relaciones del vocabulario travesti.</p>
+        </div>
+        <label class="upload">Abrir otro RDF<input id="rdf-file" type="file" accept=".rdf,.owl,.ttl,application/rdf+xml,text/turtle" /></label>
+      </header>
+
+      <section id="notice" class="notice">Cargando la ontología…</section>
+      <section id="metrics" class="metrics" aria-label="Resumen de la ontología"></section>
+
+      <nav class="tabs" aria-label="Secciones">
+        <button class="active" data-tab="explore">Explorar</button>
+        <button data-tab="hierarchy">Jerarquía</button>
+        <button data-tab="relations">Relaciones</button>
+        <button data-tab="vocabulary">Vocabulario</button>
+        <button data-tab="quality">Calidad</button>
+      </nav>
+
+      <section id="explore" class="panel active">
+        <aside class="controls">
+          <label>Buscar entidad<input id="search" type="search" placeholder="Nombre, etiqueta o URI" /></label>
+          <div id="search-results" class="result-list"></div>
+        </aside>
+        <article id="entity-detail" class="detail empty">Selecciona una entidad para consultar sus relaciones.</article>
+      </section>
+
+      <section id="hierarchy" class="panel graph-panel">
+        <div class="graph-controls"><label>Profundidad<input id="depth" type="range" min="1" max="8" value="5" /></label><span id="depth-value">5</span><button id="fit-hierarchy">Centrar</button></div>
+        <div id="hierarchy-graph" class="graph" aria-label="Jerarquía de clases"></div>
+      </section>
+
+      <section id="relations" class="panel graph-panel">
+        <div class="graph-controls"><label>Tipo de relación<select id="predicate"></select></label><label>Máximo de relaciones<input id="edge-limit" type="range" min="20" max="600" step="20" value="200" /></label><span id="edge-limit-value">200</span><button id="fit-relations">Centrar</button></div>
+        <div id="relations-graph" class="graph" aria-label="Red de relaciones"></div>
+      </section>
+
+      <section id="vocabulary" class="panel table-panel">
+        <div class="table-actions"><label>Tipo<select id="type-filter"><option value="">Todos</option></select></label><button id="download-vocabulary">Descargar CSV</button></div>
+        <div class="table-scroll"><table><thead><tr><th>Etiqueta</th><th>Tipo</th><th>URI</th></tr></thead><tbody id="vocabulary-body"></tbody></table></div>
+      </section>
+
+      <section id="quality" class="panel"><div id="quality-results" class="quality-grid"></div></section>
+      <footer>Procesamiento en el navegador · el RDF original no se modifica · Fundación Furia Trans</footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
