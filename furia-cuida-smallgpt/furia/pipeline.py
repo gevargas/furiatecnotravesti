@@ -132,7 +132,7 @@ Base curada del proyecto:
 Responde con 1–3 próximos pasos concretos cuando sea útil.
 """
         messages = [{"role": "system", "content": system}]
-        messages.extend(history[-8:])
+        messages.extend(history[-6:])
         messages.append({"role": "user", "content": user_text})
 
         fallback = False
