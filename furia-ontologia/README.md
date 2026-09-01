@@ -1,4 +1,4 @@
-# ontologia-furia (PREFIX: Onto4FurIA)
+# ontologia-furia:Onto4FurIA)
 
 **URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans/`  
 **Formatos:** OWL (RDF/XML)
