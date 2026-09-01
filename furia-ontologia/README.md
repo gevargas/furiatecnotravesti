@@ -1,7 +1,7 @@
 # ontologia-furia 
 @prefix : <https://furiatecnologiatravesti.org/ontologiaFuriaTrans//> .
 
-**URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans//`  
+**URI oficial:** `https://furiatecnologiatravesti.org/ontologiaFuriaTrans/`  
 **Formatos:** OWL (RDF/XML)
 
 **Licencia:** comunidad FurIA
