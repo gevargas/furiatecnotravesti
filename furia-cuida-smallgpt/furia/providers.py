@@ -28,6 +28,7 @@ class OllamaProvider(LLMProvider):
                 "model": self.settings.ollama_model,
                 "messages": list(messages),
                 "stream": False,
+                "think": False,
                 "keep_alive": "5m",
                 "options": {
                     "num_ctx": self.settings.context_window,
