@@ -1,9 +1,13 @@
 
+# Codespaces 
+Utilizar 4-core • 16GB RAM • 32GB
+
+
 # Crea la imagen docker con la app streamlit
 docker compose build  
 
 # Lanza los contenedores con la aplicacion y el servidor ollama
-docker compose up 
+docker compose up -d
 
 
 # Descargas modelos
