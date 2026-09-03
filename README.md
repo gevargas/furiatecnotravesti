@@ -12,13 +12,13 @@ Los pilotos exploran posibles enfoques para diseñar prototipos responsables y s
 
 Estos pilotos son productos experimentales de investigación y no deben considerarse productos terminados ni servicios listos para su uso en producción.
 
-El vocabulario público de la ontología fue seleccionado, organizado y validado por la **Fundación Furia Trans**, que es propietaria de los materiales de estos pilotos y de los prototipos derivados de ellos, salvo que se indique expresamente lo contrario en algún archivo o componente específico.
+El vocabulario público de la ontología fue seleccionado, organizado y validado por la [**Fundación Furia Trans**](https://fundacionfuriatrans.org), que es propietaria de los materiales de estos pilotos y de los prototipos derivados de ellos, salvo que se indique expresamente lo contrario en algún archivo o componente específico.
 
-La presencia de código fuente o datos en este repositorio no concede, por sí sola, autorización para reutilizarlos, redistribuirlos, comercializarlos o crear obras derivadas. Cualquier uso permitido deberá ajustarse a la licencia aplicable del repositorio y a las decisiones de gobernanza establecidas por la **Fundación Furia Trans**.
+La presencia de código fuente o datos en este repositorio no concede, por sí sola, autorización para reutilizarlos, redistribuirlos, comercializarlos o crear obras derivadas. Cualquier uso permitido deberá ajustarse a la licencia aplicable del repositorio y a las decisiones de gobernanza establecidas por la [**Fundación Furia Trans**](https://fundacionfuriatrans.org).
 
 ## About this repository
 
-This repository contains a collection of pilot experiments developed as part of furIA, a project funded by the Feminist AI Research Network **iafeminista**.
+This repository contains a collection of pilot experiments developed as part of furIA, a project funded by the Feminist AI Research Network [**iafeminista**](https://iafeminista.lat).
 
 The pilots explore possible approaches to designing responsible and context-sensitive prototypes, including:
 
@@ -32,6 +32,6 @@ The pilots explore possible approaches to designing responsible and context-sens
 
 These pilots are experimental research artifacts and should not be considered finished products or production-ready services.
 
-The ontology’s public vocabulary was selected, organized and validated by **Fundación Furia Trans** that owns these pilot materials and the prototypes derived from them, unless otherwise stated in a specific file or component.
+The ontology’s public vocabulary was selected, organized and validated by [**Fundación Furia Trans**](https://fundacionfuriatrans.org) that owns these pilot materials and the prototypes derived from them, unless otherwise stated in a specific file or component.
 
-The presence of source code or data in this repository does not by itself grant permission to reuse, redistribute, commercialize or create derivative works. Any permitted use must follow the repository’s applicable license and the governance decisions established by **Fundación Furia Trans**.
+The presence of source code or data in this repository does not by itself grant permission to reuse, redistribute, commercialize or create derivative works. Any permitted use must follow the repository’s applicable license and the governance decisions established by [**Fundación Furia Trans**](https://fundacionfuriatrans.org).
