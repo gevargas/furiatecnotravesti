@@ -1,7 +1,32 @@
 services:
   furia:
     build: .
+    container_name: furia    
     ports:
       - "8501:8501"
-    env_file:
-      - .env
+    environment:     
+      - OLLAMA_BASE_URL=http://ollama:11434
+      # - OLLAMA_MODEL=qwen2.5:0.5b-instruct-q4_K_M
+    networks:
+      - furia             
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_KEEP_ALIVE="5m"
+    networks:
+      - furia       
+    restart: unless-stopped
+
+networks:
+  furia:
+
+volumes:
+  ollama_data:

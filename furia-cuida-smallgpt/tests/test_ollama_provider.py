@@ -20,3 +20,16 @@ def test_ollama_provider_uses_small_context_and_two_threads():
     assert payload["options"]["num_ctx"] == 2048
     assert payload["options"]["num_thread"] == 2
     assert payload["options"]["num_predict"] == 120
+
+
+def test_ollama_provider_lists_installed_models():
+    settings = Settings(provider="ollama")
+    response = Mock()
+    response.raise_for_status.return_value = None
+    response.json.return_value = {"models": [{"name": "llama3.2:3b"}, {"name": "qwen2.5:0.5b"}]}
+
+    with patch("requests.Session.get", return_value=response) as get:
+        models = OllamaProvider(settings).list_models()
+
+    assert models == ["llama3.2:3b", "qwen2.5:0.5b"]
+    assert get.call_args.args[0].endswith("/api/tags")

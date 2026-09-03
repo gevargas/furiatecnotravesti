@@ -21,6 +21,14 @@ class OllamaProvider(LLMProvider):
         self.settings = settings
         self.session = requests.Session()
 
+    def list_models(self) -> list[str]:
+        response = self.session.get(
+            f"{self.settings.ollama_base_url.rstrip('/')}/api/tags",
+            timeout=self.settings.ollama_timeout,
+        )
+        response.raise_for_status()
+        return [model["name"] for model in response.json().get("models", []) if model.get("name")]
+
     def chat(self, messages: Sequence[Message]) -> str:
         response = self.session.post(
             f"{self.settings.ollama_base_url.rstrip('/')}/api/chat",

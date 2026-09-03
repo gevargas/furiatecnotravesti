@@ -1,6 +1,7 @@
 import streamlit as st
+from dataclasses import replace
 from furia.config import Settings
-from furia.providers import build_provider
+from furia.providers import OllamaProvider, build_provider
 from furia.knowledge import load_knowledge
 from furia.pipeline import FuriaCarePipeline, build_consultation_card
 
@@ -19,20 +20,16 @@ html,body,[class*="css"]{font-family:"Space Grotesk",sans-serif}
  background:
  radial-gradient(circle at 12% 7%,rgba(255,42,161,.12),transparent 28%),
  radial-gradient(circle at 88% 12%,rgba(45,226,230,.10),transparent 25%),
- #fffaf0;
- color:var(--ink);
+ var(--background-color);
+ color:var(--text-color);
 }
 .block-container{max-width:920px;padding-top:1.7rem}
-.hero{background:var(--cream);border:3px solid #111;border-radius:22px;padding:1.3rem 1.45rem;box-shadow:8px 8px 0 #111;margin-bottom:1rem}
+.hero{background:var(--secondary-background-color);border:3px solid var(--text-color);border-radius:22px;padding:1.3rem 1.45rem;box-shadow:8px 8px 0 var(--text-color);margin-bottom:1rem}
 .kicker{font-family:"DM Mono";font-size:.75rem;text-transform:uppercase;letter-spacing:.09em}
 .title{font-size:clamp(2.4rem,8vw,4.8rem);font-weight:700;letter-spacing:-.06em;line-height:.9;margin:.25rem 0}
 .ia{color:var(--pink);text-shadow:3px 3px 0 var(--cyan)}
-.chip{display:inline-block;border:1.5px solid #111;border-radius:999px;background:var(--lime);padding:.2rem .55rem;margin:.15rem .15rem 0 0;font-family:"DM Mono";font-size:.72rem}
-.notice{border-left:6px solid var(--cyan);background:white;padding:.9rem 1rem;border-radius:0 12px 12px 0;margin:1rem 0}
-[data-testid="stChatMessage"]{background:rgba(255,255,255,.86);border:1.5px solid #222;border-radius:16px;padding:.3rem .55rem}
-[data-testid="stSidebar"]{background:#101014}
-[data-testid="stSidebar"] *{color:#faf7f2}
-.stButton button,.stDownloadButton button{border:2px solid #111;border-radius:999px;box-shadow:3px 3px 0 #111;font-weight:700}
+.chip{display:inline-block;border:1.5px solid var(--text-color);border-radius:999px;background:var(--lime);padding:.2rem .55rem;margin:.15rem .15rem 0 0;font-family:"DM Mono";font-size:.72rem;color:var(--ink)}
+.notice{border-left:6px solid var(--cyan);background:var(--secondary-background-color);padding:.9rem 1rem;border-radius:0 12px 12px 0;margin:1rem 0}
 </style>
 
 <div class="hero">
@@ -51,19 +48,34 @@ settings = Settings()
 errors = settings.validate()
 kb = load_knowledge()
 
+available_models = []
+if settings.provider == "ollama":
+    try:
+        available_models = OllamaProvider(settings).list_models()
+    except Exception as error:
+        st.warning(f"No se pudieron consultar los modelos de Ollama: {error}")
+
 with st.sidebar:
     st.markdown("## ⚡ Configuración")
     st.caption(f"Proveedor: **{settings.provider}**")
-    selected_model = {
-        "ollama": settings.ollama_model,
-        "openai_compatible": settings.model,
-        "hf": settings.latamgpt_model,
-        "demo": "respuestas deterministas",
-    }.get(settings.provider, settings.latamgpt_model)
-    st.caption(f"Modelo: `{selected_model}`")
     if settings.provider == "ollama":
-        st.info("Modo local ligero configurado para el Codespace")
-        st.caption("Q4 · 398 MB · 2 hilos · contexto de 4096 tokens")
+        model_options = available_models or [settings.ollama_model]
+        selected_model = st.selectbox(
+            "Modelo de Ollama",
+            model_options,
+            index=model_options.index(settings.ollama_model) if settings.ollama_model in model_options else 0,
+            help="Modelos instalados en el servidor Ollama.",
+        )
+    else:
+        selected_model = {
+            "openai_compatible": settings.model,
+            "hf": settings.latamgpt_model,
+            "demo": "respuestas deterministas",
+        }.get(settings.provider, settings.latamgpt_model)
+    st.caption(f"Modelo: `{selected_model}`")
+    # if settings.provider == "ollama":
+    #     st.info("Modo local ligero configurado para el Codespace")
+    #     st.caption("Q4 · 398 MB · 2 hilos · contexto de 4096 tokens")
     if errors:
         for error in errors:
             st.error(error)
@@ -86,6 +98,8 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
+if settings.provider == "ollama":
+    settings = replace(settings, ollama_model=selected_model)
 provider = build_provider(settings)
 pipeline = FuriaCarePipeline(
     provider=provider,
