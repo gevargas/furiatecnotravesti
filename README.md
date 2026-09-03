@@ -1,4 +1,21 @@
 # furiatecnotravesti
+## Sobre este repositorio 
+
+Este repositorio contiene una colección de experimentos piloto desarrollados en el marco de **furIA**(https://furiatecnologiatravesti.org), un proyecto financiado por la Red de Investigación Feminista en Inteligencia Artificial **iafeminista**(https://iafeminista.lat).
+
+Los pilotos exploran posibles enfoques para diseñar prototipos responsables y sensibles al contexto, entre ellos:
+
+* herramientas conversacionales basadas en modelos de lenguaje de gran escala, con énfasis en modelos que puedan ejecutarse localmente;
+* arquitecturas técnicas orientadas a proteger la privacidad y utilizar eficientemente los recursos;
+* interfaces para explorar y comprender una ontología de términos públicos, curada por la **Fundación Furia Trans**(https://fundacionfuriatrans.org);
+* métodos para evaluar la utilidad, las limitaciones y los riesgos de estas tecnologías.
+
+Estos pilotos son productos experimentales de investigación y no deben considerarse productos terminados ni servicios listos para su uso en producción.
+
+El vocabulario público de la ontología fue seleccionado, organizado y validado por la **Fundación Furia Trans**, que es propietaria de los materiales de estos pilotos y de los prototipos derivados de ellos, salvo que se indique expresamente lo contrario en algún archivo o componente específico.
+
+La presencia de código fuente o datos en este repositorio no concede, por sí sola, autorización para reutilizarlos, redistribuirlos, comercializarlos o crear obras derivadas. Cualquier uso permitido deberá ajustarse a la licencia aplicable del repositorio y a las decisiones de gobernanza establecidas por la **Fundación Furia Trans**.
+
 ## About this repository
 
 This repository contains a collection of pilot experiments developed as part of furIA, a project funded by the Feminist AI Research Network **iafeminista**.
