@@ -18,7 +18,7 @@ La presencia de código fuente o datos en este repositorio no concede, por sí s
 
 ## About this repository
 
-This repository contains a collection of pilot experiments developed as part of furIA, a project funded by the Feminist AI Research Network [**iafeminista**](https://iafeminista.lat).
+This repository contains a collection of pilot experiments developed as part of furIA, a collective project by [**Fundación Furia Trans**](https://fundacionfuriatrans.org) and [**Observatorio de Plataformas ODP**](https://observatoriodeplataformas.org/) funded by the Feminist AI Research Network [**iafeminista**](https://iafeminista.lat).
 
 The pilots explore possible approaches to designing responsible and context-sensitive prototypes, including:
 
