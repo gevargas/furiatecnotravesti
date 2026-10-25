@@ -1,7 +1,7 @@
 # furiatecnotravesti
 ## Sobre este repositorio 
 
-Este repositorio contiene una colección de experimentos piloto desarrollados en el marco de [**furIA**](https://furiatecnologiatravesti.org), un proyecto financiado por la Red de Investigación Feminista en Inteligencia Artificial [**iafeminista**](https://iafeminista.lat).
+Este repositorio contiene una colección de experimentos piloto desarrollados en el marco de [**furIA**](https://furiatecnologiatravesti.org), un proyecto colectivo de la [**Fundación Furia Trans**](https://fundacionfuriatrans.org) y el [**Observatorio de Plataformas ODP**](https://observatoriodeplataformas.org/) financiado por la Red de Investigación Feminista en Inteligencia Artificial [**iafeminista**](https://iafeminista.lat).
 
 Los pilotos exploran posibles enfoques para diseñar prototipos responsables y sensibles al contexto, entre ellos:
 
